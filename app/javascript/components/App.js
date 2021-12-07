@@ -7,10 +7,10 @@ class App extends React.Component {
   render () {
     return (
       <BrowserRouter>
-      <Switch>
-        <Route exact path="/" render={() => ("Home!") } />
-        <Route exact path="/" render={() => <HelloWorld greeting="Friend"/> } />
-      </Switch>
+        <Switch>
+          <Route exact path="/" render={() => ("Home!") } />
+          <Route path="/hello" render={() => <HelloWorld greeting="Friend"/> } />
+        </Switch>
       </BrowserRouter>
     );
   }
